@@ -1,0 +1,53 @@
+.carousel-text {
+  color: $color-white;
+  padding: 0 0 12px 12px;
+  font-family: 'Lato', sans-serif;
+}
+
+.carousel-inner {
+  width: 760px;
+  height: 268px;
+  margin-left: 10%;
+}
+
+.carousel-wrap {
+  gap: 35px;
+  align-items: flex-end;
+  position: absolute;
+
+}
+
+.carousel-image {
+  width: 209px;
+  height: 209px;
+  background-size: cover;
+  background-position: center;
+  transition: opacity 1s ease-in-out;
+}
+
+.carousel-image-big {
+  width: 268px;
+  height: 268px;
+}
+
+.carousel-inner {
+  overflow: initial;
+}
+
+.carousel-buttons {
+  position: absolute;
+  margin-top: 3%;
+  gap: 16px;
+  margin-left: 10%;
+}
+
+.carousel-button {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-color: $color-white;
+}
