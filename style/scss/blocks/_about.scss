@@ -1,0 +1,151 @@
+.about {
+  padding: 120px 0 147px;
+  color: $color-white;
+}
+
+.about,
+.about__block {
+  position: relative;
+}
+
+.about::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100vw;
+  background-image: $background-image-about;
+  background-size: cover;
+  background-position: center;
+  top: 343px;
+  height: 1030px;
+  z-index: 0;
+}
+
+.about::after {
+  @include linear-gradient(515px, 897px, 1);
+
+  background: linear-gradient(0deg, #000 10.42%, rgba(0, 0, 0, 0.4) 65%, rgba(0, 0, 0, 0.00) 100%);
+}
+
+.about__gradient {
+  @include linear-gradient(343px, 354px, 5);
+
+  background: linear-gradient(181deg, #FFF 5%, rgba(255, 255, 255, 0.69) 21.39%, rgba(255, 255, 255, 0.00) 95%), rgba(255, 255, 255, 0.00);
+
+  &::after {
+    content: "";
+    @include linear-gradient(0, 200px, 1);
+
+    background: linear-gradient(184deg, #FFF 0%, rgba(255, 255, 255, 0.69) 21.39%, rgba(255, 255, 255, 0.44) 45.16%, rgba(255, 255, 255, 0.12) 58%, rgba(255, 255, 255, 0) 100%), rgba(255, 255, 255, 0);
+  }
+}
+
+.about__block-one {
+  z-index: 10;
+}
+
+.about__title {
+  max-width: 728px;
+  color: $color-about-title;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 56px;
+  padding-bottom: 27px;
+  margin-bottom: 0;
+}
+
+.about__text {
+  color: $color-about-text;
+  font-weight: 400;
+  position: relative;
+  z-index: 10;
+}
+
+.about__text-one {
+  max-width: 571px;
+  font-size: 24px;
+  line-height: 32px;
+  margin-bottom: 0;
+  padding-bottom: 35px;
+}
+
+.about__text_small {
+  max-width: 613px;
+  color: $color-about-text;
+  margin-bottom: 0;
+  padding-bottom: 64px;
+}
+
+.about__details {
+  display: flex;
+  gap: 64px;
+}
+
+.about__item-text {
+  color: $color-black;
+  line-height: 24px;
+}
+
+.about__item-text_title {
+  margin-top: 8px;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.about__item-text_subtitle {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.about__image {
+  max-width: 802px;
+  max-height: 327px;
+  position: absolute;
+  right: -96px;
+  top: -15px;
+  z-index: 10;
+}
+
+.about__title-kamchatka {
+  width: 1615px;
+  height: 260px;
+  border-radius: 16px;
+  font-size: 200px;
+  font-weight: 900;
+  line-height: 104px;
+  position: absolute;
+  top: 15px;
+  left: 330px;
+  color: transparent;
+  background-clip: text;
+  z-index: 0;
+  background: linear-gradient(2deg, #000 0%, rgba(0, 0, 0, 0.7) 5%, rgba(229, 226, 192, 0) 90%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.about__text-three {
+  padding-top: 381px;
+  max-width: 640px;
+  color: $color-white;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 32px;
+}
+
+.about__text-review {
+  max-width: 300px;
+  color: $color-about-text-review;
+  font-size: 16px;
+  font-weight: 300;
+  margin-top: 32px;
+  margin-bottom: 13px;
+}
+
+.about__text-caption {
+  color: $color-white;
+  font-size: 16px;
+  font-weight: 500;
+}

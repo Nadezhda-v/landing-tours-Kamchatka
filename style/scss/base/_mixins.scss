@@ -1,0 +1,21 @@
+@mixin linear-gradient($top, $height, $z-index) {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100vw;
+
+  top: $top;
+  height: $height;
+  z-index: $z-index;
+}
+
+@mixin button($size) {
+  width: $size;
+  height: $size;
+  border-radius: 50%;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-color: $color-white;
+}

@@ -3,9 +3,14 @@
   'base/custom-variables',
   'base/colors',
   'base/fonts',
-  'base/base';
+  'base/base',
+  'base/mixins';
+
 
 @import 
   'blocks/header',
+  'blocks/section',
+  'blocks/hero',
   'blocks/button',
-  'blocks/slider';
+  'blocks/slider',
+  'blocks/about';
